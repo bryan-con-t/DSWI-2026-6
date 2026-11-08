@@ -23,7 +23,8 @@ namespace cibertec_demo.Models
         [Display(Name = "Contraseña")]
         public string clave { get; set; }
 
+        [Required(ErrorMessage = "La fecha es obligatoria")]
         [Display(Name = "Fecha de registro")]
-        public DateTime fechaRegistro { get; set; }
+        public DateTime fechaRegistro { get; set; } = DateTime.Now;
     }
 }
