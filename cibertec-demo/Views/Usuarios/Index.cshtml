@@ -6,6 +6,11 @@
 
 <h1>Lista de usuarios</h1>
 
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
 <p>
     <a class="btn btn-primary" asp-action="Create">Agregar nuevo</a>
 </p>

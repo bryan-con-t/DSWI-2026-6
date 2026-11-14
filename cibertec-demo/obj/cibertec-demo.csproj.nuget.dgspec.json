@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cibertec\\source\\repos\\cibertec-demo\\cibertec-demo\\cibertec-demo.csproj": {}
+    "C:\\Users\\SUITE\\Source\\Repos\\DSWI-2026-6\\cibertec-demo\\cibertec-demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cibertec\\source\\repos\\cibertec-demo\\cibertec-demo\\cibertec-demo.csproj": {
+    "C:\\Users\\SUITE\\Source\\Repos\\DSWI-2026-6\\cibertec-demo\\cibertec-demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cibertec\\source\\repos\\cibertec-demo\\cibertec-demo\\cibertec-demo.csproj",
+        "projectUniqueName": "C:\\Users\\SUITE\\Source\\Repos\\DSWI-2026-6\\cibertec-demo\\cibertec-demo.csproj",
         "projectName": "cibertec-demo",
-        "projectPath": "C:\\Users\\Cibertec\\source\\repos\\cibertec-demo\\cibertec-demo\\cibertec-demo.csproj",
-        "packagesPath": "C:\\Users\\Cibertec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cibertec\\source\\repos\\cibertec-demo\\cibertec-demo\\obj\\",
+        "projectPath": "C:\\Users\\SUITE\\Source\\Repos\\DSWI-2026-6\\cibertec-demo\\cibertec-demo.csproj",
+        "packagesPath": "C:\\Users\\SUITE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SUITE\\Source\\Repos\\DSWI-2026-6\\cibertec-demo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cibertec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SUITE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

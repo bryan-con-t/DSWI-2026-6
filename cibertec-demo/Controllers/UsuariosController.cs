@@ -62,6 +62,7 @@ namespace cibertec_demo.Controllers
             {
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
+                TempData["Mensaje"] = $"Usuario {usuario.nombre} registrado correctamente.";
                 return RedirectToAction(nameof(Index));
             }
             return View(usuario);

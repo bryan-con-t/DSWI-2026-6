@@ -11,5 +11,7 @@ namespace cibertec_demo.Data
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
+
+        public DbSet<cibertec_demo.Models.Producto> Producto { get; set; } = default!;
     }
 }
