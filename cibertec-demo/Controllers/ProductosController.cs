@@ -13,10 +13,12 @@ namespace cibertec_demo.Controllers
     public class ProductosController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ProductoRepository _productoRepository;
 
-        public ProductosController(AppDbContext context)
+        public ProductosController(AppDbContext context, ProductoRepository productoRepository)
         {
             _context = context;
+            _productoRepository = productoRepository;
         }
 
         // GET: Productos
@@ -52,16 +54,13 @@ namespace cibertec_demo.Controllers
         }
 
         // POST: Productos/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Precio,Cantidad,Estado")] Producto producto)
+        public async Task<IActionResult> Create(Producto producto)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(producto);
-                await _context.SaveChangesAsync();
+                await _productoRepository.AgregarProductoSP(producto);
                 return RedirectToAction(nameof(Index));
             }
             return View(producto);
