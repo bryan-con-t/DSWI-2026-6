@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE sp_listar_productos_paginados
+﻿CREATE OR ALTER PROCEDURE sp_listar_productos_paginados
 (
 	@pageSize INT = 5, /* Cantidad de elementos por página */
 	@page INT = 1 /* Índice de la página */
@@ -10,5 +10,6 @@ BEGIN
 	SELECT * FROM Producto
 	ORDER BY Nombre
 	OFFSET @inicio ROWS /* Inicio de la paginación */
-	FETCH NEXT @pageSize ROWS ONLY /* Elementos paginados */
+	FETCH NEXT @pageSize ROWS ONLY; /* Elementos paginados */
+	SELECT COUNT(*) FROM Producto;
 END

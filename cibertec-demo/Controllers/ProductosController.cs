@@ -22,11 +22,13 @@ namespace cibertec_demo.Controllers
         }
 
         // GET: Productos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-              return _context.Producto != null ? 
-                          View(await _context.Producto.ToListAsync()) :
-                          Problem("Entity set 'AppDbContext.Producto'  is null.");
+            int pageSize = 5;
+            var (productos, totalRegistros) = await _productoRepository.ObtenerProductosPaginadosSP(page, pageSize);
+            ViewBag.PaginaActual = page;
+            ViewBag.TotalPaginas = (int)Math.Ceiling((double)totalRegistros / pageSize);
+            return View(productos);
         }
 
         // GET: Productos/Details/5
